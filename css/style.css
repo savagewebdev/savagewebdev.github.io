@@ -4,6 +4,11 @@
 	-ms-box-sizing: border-box; /* This provides compatibility for IE web browsers */
 	box-sizing: border-box; /* This makes box changes work for both border & padding properties */
 }	
+body {
+	background-image: url("../pictures/spider.jpg");
+	background-color: blue;
+	background-repeat: no-repeat;
+}
 .grid {
 	margin: 0 auto; /* Centers children elements on the page (for large screens) */
 }
