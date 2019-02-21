@@ -40,7 +40,7 @@
       var locations = [];
 
       for (let place of places) {
-      fetch('https://api.yelp.com/v3/graphql', {
+      fetch('http://cors.io/?https://api.yelp.com/v3/graphql', {
           headers: {
             "Access-Control-Allow-Origin" : "https://savagewebdev.github.io",
             "Content-Type" : "application/graphql",
