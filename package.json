@@ -1,0 +1,25 @@
+{
+  "name": "savagewebdev.github.io",
+  "version": "1.0.0",
+  "description": "SavageWebDev Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savagewebdev/savagewebdev.github.io.git"
+  },
+  "author": "Robin Savage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savagewebdev/savagewebdev.github.io/issues"
+  },
+  "homepage": "https://github.com/savagewebdev/savagewebdev.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "mapbox-gl": "^1.6.0",
+    "popper.js": "^1.16.0"
+  }
+}
