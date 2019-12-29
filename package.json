@@ -20,12 +20,7 @@
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "mapbox-gl": "^1.6.0",
-    "popper.js": "^1.16.0",
-    "requirejs": "^2.3.6"
+    "popper.js": "^1.16.0"
   },
-  "devDependencies": {
-    "grunt": "^1.0.4",
-    "grunt-dev-server": "^0.1.0",
-    "grunt-web-server": "^1.2.3"
-  }
+  "devDependencies": {}
 }
