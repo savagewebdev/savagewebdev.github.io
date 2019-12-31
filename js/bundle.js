@@ -1,5 +1,13 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+ko.components.register('mapbox', {
+ 	viewModel: { require: 'js/mapbox' },
+ 	template: { require: '<div class="container-fluid" id="map" style="width: 100%; height: 300px;"></div>' }, 
+});
+
+ko.applyBindings();
+},{}],2:[function(require,module,exports){
+{
+const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoicm9iaW51c21heGltdXMiLCJhIjoiY2pzbm5qY2doMGU5dzQ0bjU2eWZiZWJkeCJ9.Cm0M0FhRGX6dnLhQB6wa7g';
 const map = new mapboxgl.Map({
@@ -7,7 +15,16 @@ const map = new mapboxgl.Map({
 	style: 'mapbox://styles/mapbox/streets-v11'
 });
 
-},{"mapbox-gl/dist/mapbox-gl.js":2}],2:[function(require,module,exports){
+map.addControl(
+	new mapboxgl.GeolocateControl({
+		positionOptions: {
+			enableHighAccuracy: true
+		},
+		trackUserLocation: true
+	})
+);
+}
+},{"mapbox-gl/dist/mapbox-gl.js":3}],3:[function(require,module,exports){
 /* Mapbox GL JS is licensed under the 3-Clause BSD License. Full text of license: https://github.com/mapbox/mapbox-gl-js/blob/v1.6.0/LICENSE.txt */
 (function (global, factory) {
 typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -49,4 +66,4 @@ return mapboxgl;
 })));
 
 
-},{}]},{},[1]);
+},{}]},{},[1,2]);
