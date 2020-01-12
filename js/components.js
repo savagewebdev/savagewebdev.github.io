@@ -3,4 +3,7 @@ ko.components.register('mapbox', {
  	template: { require: '<div class="container-fluid" id="map" style="width: 100%; height: 300px;"></div>' }, 
 });
 
+
+$(document).ready(function(){
 ko.applyBindings();
+}
